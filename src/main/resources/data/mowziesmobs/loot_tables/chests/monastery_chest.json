@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -25,22 +25,17 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 4,
           "name": "minecraft:emerald"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 8,
           "name": "mowziesmobs:sand_rake"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "mowziesmobs:sculptor_staff"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 8,
+          "weight": 32,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -56,7 +51,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -72,7 +67,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -87,7 +82,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -102,7 +97,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -117,7 +112,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -132,12 +127,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 4,
           "name": "minecraft:mushroom_stew"
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -152,6 +147,7 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -163,6 +159,31 @@
             }
           ],
           "name": "minecraft:torch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "mowziesmobs:sculptor_staff"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "mowziesmobs:geomancer_beads"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "mowziesmobs:geomancer_robe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "mowziesmobs:geomancer_belt"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "mowziesmobs:geomancer_sandals"
         }
       ]
     }

@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_top",
   "textures": {
     "top": "mowziesmobs:block/red_raked_sand",
-    "side": "minecraft:block/sand"
+    "side": "minecraft:block/red_sand"
   }
 }

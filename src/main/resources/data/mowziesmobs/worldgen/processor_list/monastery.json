@@ -108,6 +108,10 @@
           "Name": "minecraft:dark_oak_trapdoor"
         }
       }
+    },
+    {
+      "processor_type": "mowziesmobs:chest_processor",
+      "loot_table": "mowziesmobs:chests/monastery_chest"
     }
   ]
 }

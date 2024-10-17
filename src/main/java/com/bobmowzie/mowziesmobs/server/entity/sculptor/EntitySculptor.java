@@ -28,6 +28,7 @@ import com.bobmowzie.mowziesmobs.server.entity.effects.geomancy.EntityPillar;
 import com.bobmowzie.mowziesmobs.server.inventory.ContainerSculptorTrade;
 import com.bobmowzie.mowziesmobs.server.item.ItemHandler;
 import com.bobmowzie.mowziesmobs.server.item.ItemSculptorStaff;
+import com.bobmowzie.mowziesmobs.server.loot.LootTableHandler;
 import com.bobmowzie.mowziesmobs.server.potion.EffectGeomancy;
 import com.bobmowzie.mowziesmobs.server.sound.MMSounds;
 import net.minecraft.client.Minecraft;
@@ -84,7 +85,7 @@ import java.util.*;
 import java.util.function.Predicate;
 
 public class EntitySculptor extends MowzieGeckoEntity {
-    public static int TEST_HEIGHT = 60;
+    public static int TEST_HEIGHT = 20;
     public static int TEST_RADIUS_BOTTOM = 6;
     public static int TEST_RADIUS = 16;
     public static int TEST_MAX_RADIUS_HEIGHT = 20;
@@ -766,6 +767,11 @@ public class EntitySculptor extends MowzieGeckoEntity {
             return deathAbility.getTicksInUse() - deathAbility.getTicksInSection() + 84;
         }
         return 94;
+    }
+
+    @Override
+    protected ResourceLocation getDefaultLootTable() {
+        return LootTableHandler.SCULPTOR;
     }
 
     public int getTestTimePassed() {

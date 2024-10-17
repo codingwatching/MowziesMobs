@@ -37,7 +37,7 @@ public class EntityBoulderProjectile extends EntityBoulderBase {
     protected final List<Entity> ridingEntities = new ArrayList<Entity>();
     protected boolean travelling = false;
     protected float speed = 1.5f;
-    protected int damage = 8;
+    protected int damage = 10;
 
     private boolean didShootParticles = false;
     private static final EntityDataAccessor<Vector3f> SHOOT_DIRECTION = SynchedEntityData.defineId(EntityBoulderProjectile.class, EntityDataSerializers.VECTOR3);
@@ -54,7 +54,7 @@ public class EntityBoulderProjectile extends EntityBoulderBase {
         super.setSizeParams();
         GeomancyTier size = getTier();
         if (size == GeomancyTier.MEDIUM) {
-            damage = 12;
+            damage = 13;
             speed = 1.2f;
         }
         else if (size == GeomancyTier.LARGE) {
@@ -63,10 +63,11 @@ public class EntityBoulderProjectile extends EntityBoulderBase {
         }
         else if (size == GeomancyTier.HUGE) {
             damage = 20;
-            speed = 0.65f;
+            speed = 0.8f;
         }
 
         if (getCaster() instanceof Player) damage *= ConfigHandler.COMMON.TOOLS_AND_ABILITIES.EARTHREND_GAUNTLET.attackMultiplier.get();
+        else if (getCaster() instanceof EntitySculptor) damage *= ConfigHandler.COMMON.MOBS.SCULPTOR.combatConfig.attackMultiplier.get();
     }
 
     public float getSpeed() {
@@ -115,7 +116,7 @@ public class EntityBoulderProjectile extends EntityBoulderBase {
                 if (ridingEntities != null && ridingEntities.contains(entity)) continue;
                 if (getCaster() != null) entity.hurt(damageSources().mobProjectile(this, getCaster()), damage);
                 else entity.hurt(damageSources().generic(), damage);
-                if (isAlive() && boulderSize != GeomancyTier.HUGE) this.explode();
+                if (isAlive()) this.explode();
             }
         }
 

@@ -471,7 +471,7 @@ public final class ConfigHandler {
             combatConfig = new CombatConfig(builder, 1, 1);
             this.testHeight = builder.comment("How tall (in blocks) the Sculptor's test will be")
                     .translation(LANG_PREFIX + "test_height")
-                    .defineInRange("test_height", 50, 1, 500);
+                    .defineInRange("test_height", 60, 1, 500);
             this.testTimeLimit = builder.comment("The time limit (in seconds) for completing the Sculptor's test")
                     .translation(LANG_PREFIX + "test_time_limit")
                     .defineInRange("test_time_limit", 360, 1, 36000);
